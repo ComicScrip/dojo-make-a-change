@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Change making</title>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" href="src/styles.css">
+</head>
+
+<body>
+		<div class="title-wrapper">
+				<img width="50" src="https://i.imgur.com/fV5WLjj.png" />
+				<h1>Change making</h1>
+				<img width="50" src="https://i.imgur.com/fV5WLjj.png" />
+		</div>
+			
+		<p>
+			Ever wondered how do automatic checkouts 
+			in supermarkets deal with change making ?
+		</p>
+
+
+		<p>
+			In order for the self-checkouts to be efficient, 
+			they need to give back money to 
+			the customer in a way that minimizes the 
+			total number of coins/bills it returns. 	
+		</p>
+
+		<p>To simplify the problem we'll first asume that :</p>	
+		<ul>
+				<li>
+						The machine only deals with 
+						coins which will have a value of 2, 5 or 10.
+				</li>
+				<li>
+						The amout of money the machine 
+			      has to return in the form of coins is always 
+						a positive integer.
+				</li>
+				<li>
+						Each coin value is available in unlimited quantities.
+				</li>
+		</ul>
+		<p>
+			The goal of this exercise is to develop an algorithm 
+			whose purpose is to choose which coins the machine should return to the customer.
+			<br/>
+			Example : 
+			<br/>
+			Imagine that the cash machine has to return $29 in coins.
+			Sure we could return :
+		</p>
+		<ul>
+				<li>two coins of 2</li>
+				<li>three coin of 5</li>
+				<li>one coin of 10</li>
+		</ul>
+		<p>
+			But it's not optimal, we're using 6 coins in total, when we could have used
+			5, by returning money like this : 
+		</p>
+		<ul>
+				<li>two coins of 2</li>
+				<li>one coin of 5</li>
+				<li>two coin of 10</li>
+		</ul>
+		<p>
+			Your algorithm should always output the optimal solution
+			in the form of an object that maps coin values to the amount of coin of a given value to return.
+			For the previous example that would be {"2": 2, "5": 1, "10": 2}.
+			If there's no solution for the problem with the given contraints, the function should return null.
+		</p>
+	</script>
+</body>
+
+</html>

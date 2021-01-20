@@ -1,0 +1,15 @@
+body {
+  font-family: sans-serif;
+}
+
+.title-wrapper {
+  display: flex;
+}
+.title-wrapper img:nth-child(1) {
+  transform: scaleX(-1);
+}
+.title-wrapper h1 {
+  position: relative;
+  top: 25px;
+  margin: 10px;
+}
